@@ -1,3 +1,4 @@
+// Hamburger-menu styling
 const hamburger = document.querySelector(".hamburger-menu");
 const offscreenMenu = document.querySelector(".offscreen-menu");
 const menuLinks = document.querySelectorAll(".offscreen-menu a");
@@ -41,10 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
     showImage(currentIndex);
   }
 
-  // Optional: Automatically change images every few seconds
+  // To automatically change images every few seconds
   setInterval(nextImage, 3000);
 
-  // Initial display
   showImage(currentIndex);
 });
 
