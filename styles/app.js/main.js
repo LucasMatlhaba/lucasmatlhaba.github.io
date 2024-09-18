@@ -2,6 +2,7 @@
 const hamburger = document.querySelector(".hamburger-menu");
 const offscreenMenu = document.querySelector(".offscreen-menu");
 const menuLinks = document.querySelectorAll(".offscreen-menu a");
+const closeBtn = document.querySelector(".close-btn");
 
 // Toggle the off-screen menu when the hamburger is clicked
 hamburger.addEventListener("click", () => {
@@ -13,6 +14,11 @@ menuLinks.forEach((link) => {
   link.addEventListener("click", () => {
     offscreenMenu.classList.remove("show");
   });
+});
+
+// Close the off-screen menu when the close button is clicked
+closeBtn.addEventListener("click", () => {
+  offscreenMenu.classList.remove("show");
 });
 
 // JavaScript for Carousel

@@ -98,6 +98,22 @@ nav a:hover {
   font-size: 1.2em;
 }
 
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ff5757;
+}
+
 /* Navbar Media Queries for Mobile */
 @media (max-width: 768px) {
   .navbar {
